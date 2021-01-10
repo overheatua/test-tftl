@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Internet shop">
+	<meta name="keywords" content="TFTL">
+	<link rel="preload" as="style" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<link rel="preload" as="style" href="css/style.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>TFTL</title>
+</head>
+
+<body>
+	<header id="header" class="header">
+		<div class="container">
+			<a href="#" class="header__logo"><img src="img/logo.png" alt="Logo" aria-label="Logo"></a>
+			<button id="toggle" class="header__toggle" aria-label="Menu">
+				<span></span>
+				<span></span>
+			</button>
+			<nav class="header__menu">
+				<ul class="header__nav-list">
+					<li><a href="#">Commercial</a></li>
+					<li><a href="#">Editorial</a></li>
+					<li><a href="#">Reportage</a></li>
+					<li><a href="#">Meet me</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<section class="animate">
+			<svg width="630" height="792" viewBox="0 0 630 792" fill="none" xmlns="http://www.w3.org/2000/svg" id="anime">
+				<path d="M143.88 35.0866C-164.416 336.916 104.711 400.329 221.865 2C347.089 149.02 791.785 345.761 356.176 112.996C613.685 570.4 664.427 276.819 608.595 791" stroke="#2828BD"></path>
+			</svg>
+		</section>
+		<div class="slider">
+			<span class="tooltip-cursor">Drag me</span>
+			<div class="container">
+				<div class="swiper-background parallaxed">
+					<div class="slide-1 slide show"><img src="img/image1.png" alt=""></div>
+					<div class="slide-2 slide"><img src="img/image2.png" alt=""></div>
+					<div class="slide-3 slide"><img src="img/image3.png" alt=""></div>
+				</div>
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<p>Ink Lingerie</p>
+						</div>
+						<div class="swiper-slide">
+							<p>Ink Lingerie</p>
+						</div>
+						<div class="swiper-slide">
+							<p>Ink Lingerie</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
+	<script src="js/script.min.js" async=""></script>
+</body>
+
+</html>

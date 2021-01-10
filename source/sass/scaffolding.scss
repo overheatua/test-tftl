@@ -1,0 +1,89 @@
+body,
+html {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+
+html {
+	box-sizing: border-box;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+body {
+	cursor: url('./../img/cursor-circle.svg'), auto;
+	display: flex;
+	flex-direction: column;
+	font-size: 12px;
+	line-height: 14px;
+	letter-spacing: 0.02em;
+	color: #000000;
+	font-family: 'TT Travels',
+		sans-serif;
+	background-color: #FFFFFF;
+
+}
+
+main {
+	flex-grow: 1;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+a {
+	color: #000000;
+	text-decoration: none;
+	transition: all .35s;
+
+	&:hover {
+		color: #828282;
+		text-decoration: none;
+	}
+}
+
+ul {
+	@include list-reset;
+}
+
+button {
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+
+	&:focus {
+		outline: none;
+	}
+}
+
+.container {
+	max-width: 1440px;
+	padding: 0 20px;
+	margin: 0 auto;
+
+	@media (min-width: 414px) {
+		padding: 0 24px;
+	}
+
+	@media (min-width: $tablet) {
+		padding: 0 32px;
+	}
+
+	@media (min-width: $desktopHD) {
+		padding: 0 48px;
+	}
+}

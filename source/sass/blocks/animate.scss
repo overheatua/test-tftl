@@ -1,0 +1,54 @@
+.animate {
+	width: 100%;
+	position: absolute;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+
+	& svg#anime {
+		width: 339px;
+		height: 429px;
+	}
+}
+
+@media (min-width: 414px) {
+	.animate {
+		& svg#anime {
+			width: 392px;
+			height: 493px;
+		}
+	}
+}
+
+@media (min-width: $tablet) {
+	.animate {
+		margin-top: -30px;
+
+		& svg#anime {
+			width: 628px;
+			height: 789px;
+		}
+	}
+}
+
+@media (min-width: $desktop) {
+	.animate {
+		margin-top: -100px;
+
+		& svg#anime {
+			width: 506px;
+			height: 605px;
+		}
+	}
+}
+
+@media (min-width: $desktopHD) {
+	.animate {
+		margin-top: -135px;
+
+		& svg#anime {
+			width: 608px;
+			height: 725px;
+		}
+	}
+}
